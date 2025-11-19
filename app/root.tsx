@@ -42,8 +42,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         <script src="https://js.puter.com/v2/"
-          data-max-body-length="52428800"
-          data-max-content-length="52428800"></script>
+        ></script>
         {children}
         <ScrollRestoration />
         <Scripts />

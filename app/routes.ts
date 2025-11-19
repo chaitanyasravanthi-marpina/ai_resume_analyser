@@ -7,4 +7,7 @@ export default [
     route('/resume/:id', 'routes/resume.tsx'),
     route('/wipe', 'routes/writeHeapSnapshot.tsx'),
 
+    // Catch-all route
+    route('*', 'routes/not-found.tsx')
 ] satisfies RouteConfig;
+

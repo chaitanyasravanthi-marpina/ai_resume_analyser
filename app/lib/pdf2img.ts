@@ -75,11 +75,15 @@ export async function convertPdfToImage(
                 1.0
             ); // Set quality to maximum (1.0)
         });
-    } catch (err) {
+    } catch (err: any) {
+        console.error("PDF CONVERSION ERROR:", err);
         return {
             imageUrl: "",
             file: null,
-            error: `Failed to convert PDF: ${err}`,
+            error: `Failed to convert PDF: ${err?.message || err}`,
         };
     }
 }
+
+
+
